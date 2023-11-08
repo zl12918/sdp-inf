@@ -1,5 +1,5 @@
 # sdp-inf
-Example codes for our paper "..."
+Example codes for our paper "Rigurous inference of stochastic reaction networks based on moment constraints via semidefinite optimisation".
 
 ---------------------------------
 
