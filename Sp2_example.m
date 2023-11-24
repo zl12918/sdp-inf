@@ -136,13 +136,8 @@ M1s = cell(d-db, 1);
 M2s = cell(d-db, 1);
 
 for i = db:(d-1)
-    n0 = sum(1:(1+floor(i/2)));
-    n1 = sum(1:(1+floor((i-1)/2)));
-    M0 = string(zeros(n0, n0));
-    M1 = string(zeros(n1, n1));
-    M2 = string(zeros(n1, n1));
     % multi-index matrix
-    alpha0 = zeros(2,n0);
+    alpha0 = zeros(2,1);
     pos = 1;
     for j = 0:floor(i/2)
         for k = 0:(floor(i/2)-j)
@@ -150,6 +145,8 @@ for i = db:(d-1)
             pos = pos + 1;
         end
     end
+    n0 = length(alpha0);
+    M0 = string(zeros(n0, n0));
     % create mmt. matrix
     for j = 1:n0
         for k = 1:n0
@@ -157,7 +154,7 @@ for i = db:(d-1)
         end
     end
     % multi-index matrix
-    alpha1 = zeros(2,n1);
+    alpha1 = zeros(2,1);
     pos = 1;
     for j = 0:floor((i-1)/2)
         for k = 0:(floor((i-1)/2)-j)
@@ -165,6 +162,9 @@ for i = db:(d-1)
             pos = pos + 1;
         end
     end
+    n1 = length(alpha1);
+    M1 = string(zeros(n1, n1));
+    M2 = string(zeros(n1, n1));
     % create mmt. matrices
     for j = 1:n1
         for k = 1:n1
