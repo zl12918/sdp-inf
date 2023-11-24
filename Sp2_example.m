@@ -145,7 +145,7 @@ for i = db:(d-1)
             pos = pos + 1;
         end
     end
-    n0 = length(alpha0);
+    n0 = width(alpha0);
     M0 = string(zeros(n0, n0));
     % create mmt. matrix
     for j = 1:n0
@@ -162,7 +162,7 @@ for i = db:(d-1)
             pos = pos + 1;
         end
     end
-    n1 = length(alpha1);
+    n1 = width(alpha1);
     M1 = string(zeros(n1, n1));
     M2 = string(zeros(n1, n1));
     % create mmt. matrices
