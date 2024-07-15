@@ -1,4 +1,4 @@
-# SDP-Inf
+# sdp-inf
 Example codes for our paper **Moment-based parameter inference with error guarantees for stochastic reaction networks**.
 
 ---------------------------------
