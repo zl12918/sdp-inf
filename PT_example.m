@@ -1,4 +1,4 @@
-%%% This is an example of bounding parameters in a 2-species model (see Fig.4 in paper)
+%%% This is an example of bounding parameters in a post-transcriptional gene regulation model (see Fig.4 in paper)
 %%% We demonstrate how to combine two independent datasets in which different species are observed
 
 k = [6,0.8,5,0.5,1]; % true parameters
